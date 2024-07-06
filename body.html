@@ -8,12 +8,13 @@
 
 </head>
 <body>
-    <div class="portcon">
-        <ul class="nav">
-            <li class="logo"></li>
-            <li><a href="#">home</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">contact</a></li>
+    <div id="home" class="portcon">
+        <ul id="main-nav" class="nav">
+            <a href="#home"><li class="logo"></li></a>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#skill">skills</a></li>
+            <li><a href="#contact">contact</a></li>
         </ul>
         <div class="left">
             <div class="content">
@@ -30,9 +31,86 @@
 
         </div>
         <div class="right">
-            
         </div>
     </div>
+
+    <section id="about" class="about">
+        <div class="containter">
+            <h1>About <span>me</span></h1>
+            <p>I am currently pursuing B.E. in Information Science and Engineering at Sir MVIT.
+                 My educational journey began at KV Hebbal for high school and KV Tambaram for middle school, where I laid the foundation for my academic pursuits.
+                  Beyond academics, I am passionate about technology and aspire to achieve significant milestones in this field. 
+                  In my leisure time, I enjoy playing chess and immersing myself in light novels. I also maintain an active lifestyle, emphasizing my athletic interests. 
+                  My goal is to deepen my knowledge and skills in technology, aiming for a fulfilling career in this dynamic field.
+            </p>
+        </div>
+    </section>
+
+    <section id="skill" class="skills">
+        <div class="scon">
+            <h1>Skills</h1>
+            <p>I am currently learning HTML and CSS to build the foundation of my web development skills.
+                 I have a strong grasp of programming languages like C and Java,
+                  using them to develop efficient solutions and implement basic data structures and algorithms (DSA). 
+                  As I continue to delve deeper into web development, I am eager to apply my growing knowledge of HTML and CSS to create visually appealing and responsive web interfaces. 
+                  My goal is to combine these skills to develop seamless, user-friendly applications that meet modern web standards.
+            </p>
+        <div class="imges">
+            <img src="imges/clogo.jpg" alt="clogo"><img src="imges/javalogo.jpg" alt="javalogo"><img src="imges/htmllogo2.jpg" alt="htmllogo"><img src="imges/csslogo.jpg" alt="csslogo">
+
+        </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="ccon">
+            <h1>contact <span>me</span></h1>
+            <div class="items">
+            <div>
+                <a href="tel:+916379523924"></a>
+                <img src="imges/phone.jpg" alt="">
+                <h3>Call me on</h3>
+                <p>+91 6379523924</p>
+            </a>
+            </div>
+            <div>
+                <a href="mailto:akuma.shirin@gmail.com">
+                <img src="imges/email.jpg" alt="">
+                <h3>Email me at</h3>
+                <p>akuma.shirin@gmail.com</p>
+            </a>
+            </div>
+            <div>
+                <a href="https://github.com/winterwoods17">
+                <img src="imges/git.jpg" alt="">
+                <h3>reach me out at</h3>
+                <p>winterwoods17</p>
+            </a>
+            </div>
+        </div>
+
+
+        </div>
+    </section>
+    <section class="for">
+    <form method="post" name="form" action="https://script.google.com/macros/s/AKfycbz_i0_alKymUFM_M1OKQD45QnleXPWbNZaF90GtCe3IZic5cLb8f8Ek0JoIEN6w-5r2Fg/exec">
+        <div class="name">
+            <input type="text" name="name" placeholder="your name">
+            <input type="text" name="email" placeholder="your email">
+        </div>
+        <div class="textarea">
+            <textarea  rows="10" cols="30" name="message" placeholder="enter your remark"></textarea>
+        </div>
+        <div class="button">
+            <input type="submit" value="submit"></input>
+        </div>
+    </form>
+    </section>
+    <section class="footer">
+        <div>
+            <p>&copy; 2024 NISHA. All rights reserved.</p>
+        </div>
+
+    </section>
     
     
 </body>

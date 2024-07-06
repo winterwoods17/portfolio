@@ -7,6 +7,9 @@
     font-family: "Poppins", sans-serif;
    
 }
+html{
+    scroll-behavior: smooth;
+}
 .portcon{
     min-height: 100vh;
     width: 100%;
@@ -15,11 +18,13 @@
 .nav{
     display: flex;
     gap: 3.5rem;
-    height: 15vh;
+    height: 12vh;
     width: 100%;
     justify-content: center;
     align-items: center;
     position: fixed;
+    background-color: #151516;
+    z-index: 1000; 
     
 
 }
@@ -32,6 +37,9 @@ li a{
     font-size: 1rem;
     color: #fff;
 }
+li a:hover{
+    color: #b5e48c;
+}
 .left{
     background-color: #151516;
     width: 70%;
@@ -41,11 +49,13 @@ li a{
     
  
 }
-.right{
-    background:linear-gradient(-45deg,#d9ed92,#151516 80%);
+.right {
+    background: 
+        
+        linear-gradient(to bottom, #d9ed92, #151516 80%);
     width: 30%;
-
 }
+
 .left, .right{
     height: 100vh;
     display: flex;
@@ -97,11 +107,10 @@ li a{
     0 0 1rem  #d9ed92;
 }
 .logo{
-    background-image: url("images/logo.jpg");
+    background-image: url("imges/ln.jpg");
     background-size: 100% auto;
     background-position: center;
     position: fixed;
-    border: .2rem solid #fff;
     width: 4rem;
     aspect-ratio: 1;
     position: absolute;
@@ -110,5 +119,166 @@ li a{
     left: 10%;
     transform: translate(-50%,-50%);
 }
+ul a li:hover{
+    border: .1rem solid #fff;
+}
 
+.about{
+    padding: 5rem 0 10rem 0 ;
+    background-color: #151516;
+}
+.about .containter{
+    width: 80%;
+   margin-left: 10%;
+   color: #e1e5f2;
+}
 
+.about .containter h1{
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: 2rem;
+}
+.about .containter h1 span{
+    color: #b5e48c;
+}
+
+.skills{
+    padding: 5rem 0 10rem 0 ;
+    background-color: #151516;
+}
+.skills .scon{
+    width: 70%;
+    color: #e1e5f2;
+    margin: auto;
+    border: solid #b5e48c;
+    border-radius: 15px 50px; 
+    padding: 10%;
+ }
+ .skills .scon h1{
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: 2rem;
+ }
+ section .imges img{
+    width: 20%;
+    height: 100px;
+    margin: 20px;
+    margin-top: 40px;
+    border: solid white;
+    background-color: #fff;
+    border-radius: 50%;
+    
+ }
+
+ .contact{
+    padding: 5rem 0 10rem 0 ;
+    background-color: #151516;
+ }
+ .contact .ccon{
+   margin-left: 5%;
+   color: #e1e5f2;
+   
+ }
+ .items {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    gap: 10rem; /* Gap between items */
+    flex-wrap: wrap; /* Wrap items if necessary */
+}
+
+.items div {
+    text-align: center;
+    max-width: 200px; /* Adjust as needed */
+}
+
+ .contact .ccon h1{
+    margin-bottom: 10rem;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-left: 5%;
+}
+.contact .ccon h1 span{
+    color: #b5e48c;
+}
+.contact .ccon img{
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
+}
+div a{
+    text-decoration: none;
+    color: #fff;
+}
+.for{
+    padding: 5rem 0 10rem 0 ;
+    background-color: #151516;
+}
+.name{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    width: 70%;
+    margin-left: 15%;
+    
+}
+.textarea{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin-left: 15%;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+.name input{
+    width: 50%;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #151516;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.textarea textarea{
+    width: 50%;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #151516;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.button input{
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #333;
+    border-radius: 20px;
+    background-color: #151516;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.button input:hover{
+    background-color: #b5e48c;
+    color: #fff;
+    border-color: #151516;
+}
+.footer{
+    padding: 2rem 0 0 0 ;
+    background-color: #151516;
+    color: #fff;
+}
+.footer div{
+    margin-left: 40%;
+}
+@media (max-width: 1024px){
+    .design{
+        display: none;
+    }
+    #main-nav{
+        display: none;
+    }
+}
